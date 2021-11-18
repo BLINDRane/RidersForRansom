@@ -113,10 +113,17 @@ nav a {
     text-decoration: none;
 }
 
-section {
+.about {
     background: rgba(255, 255, 255, 0.479);
+    padding-left: 10px;
 }
 
-section h1 {
+.about h1 {
     text-align: center;
+}
+
+
+.about img {
+    width: 15vw;
+    height: 30vh;
 }
