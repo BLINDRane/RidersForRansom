@@ -1,21 +1,61 @@
+/* Affects whole content area */
+
 body {
-    background-image: url(Images/background.jpg);
+    background-image: url(Images/Backgrounds/saltflat-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    
+    from {opacity: 0;}
+    
+    to {opacity: 1;}
+
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+
+    to { opacity: 1; }
+}
 
 /* Hero Image and Content */
 
 header {
     height: 300px; /* Height of the whole header */
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100% 40%;
     background-attachment: fixed;
 }
+
+#home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/Banners/home-banner.jpg);
+    background-position: 100% 40%;
+}
+
+#writeups {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/Banners/writeups-banner.jpg);
+    background-position: 100% 75%;
+}
+
+#gallery {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/Banners/gallery-banner.jpg);
+    background-position: 100% 70%;
+}
+
+/* Logo is currently removed.
 
 .logo {
     
@@ -34,11 +74,20 @@ header {
     margin: auto;
 }
 
+.logo img:hover {
+    box-shadow: 0px 0px 5px black;
+}
+
+*/
+
 /* Navigation Bar */
 
 nav {
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
+    top: 90%;
+    position: relative;
+
 }
 
 nav ul {
@@ -52,6 +101,22 @@ nav li{
     width: 80px;
     display: inline-block;
     border-style: ridge;
-    box-shadow: 0px 0px 5px black
+    box-shadow: 0px 0px 5px black;
 }
 
+nav li:hover {
+    box-shadow: 0px 0px 8px grey;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.479);
+}
+
+section h1 {
+    text-align: center;
+}
