@@ -34,7 +34,7 @@ body {
 /* Hero Image and Content */
 
 header {
-    height: 300px; /* Height of the whole header */
+    height: 30vh; /* Height of the whole header */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -42,17 +42,17 @@ header {
 
 #home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/Banners/home-banner.jpg);
-    background-position: 100% 40%;
+    background-position: 100% 50%;
 }
 
 #writeups {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/Banners/writeups-banner.jpg);
-    background-position: 100% 75%;
+    background-position: 100% 125%;
 }
 
 #gallery {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/Banners/gallery-banner.jpg);
-    background-position: 100% 70%;
+    background-position: 100% 75%;
 }
 
 /* Logo is currently removed.
