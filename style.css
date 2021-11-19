@@ -10,6 +10,7 @@ body.gallery {
     background-image: url(Images/Backgrounds/overlook-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 100% 25%;
 }
 
 body.writeups {
