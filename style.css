@@ -111,26 +111,32 @@ nav ul {
 }
 
 nav li{
-    width: 80px;
+    width: 150px;
     display: inline-block;
-    border-style: ridge;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px grey
 }
 
 nav li:hover {
-    box-shadow: 0px 0px 8px grey;
+    box-shadow: 0px 0px 8px white
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 18pt;
+    font-family: Helvetica;
 }
 
-.about {
+/* About page */
+
+.about article{
     background: rgba(255, 255, 255, 0.808);
     padding-left: 10px;
-    width: 50%;
+    width: 30%;
     margin: auto;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .about h1 {
@@ -145,7 +151,6 @@ nav a {
     text-align: center;
     width: 70%;
     margin: auto;
-    padding-bottom: 15px;
     font-size: 14pt;
     font-family: Arial, Helvetica, sans-serif
 }
