@@ -1,17 +1,13 @@
 /* #region Whole Content Affects whole content area */
-html {
-   height: 100%;
-}
-
 body{
     margin: 0;
-    height: 100%;
 }
 
 body.homepage {
     background-image: url(Images/Backgrounds/saltflat-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 40% 100%;
 }
 
 body.gallerypage {
