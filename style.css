@@ -1,5 +1,9 @@
 /* Affects whole content area */
 
+body{
+    margin: 0;
+}
+
 body.homepage {
     background-image: url(Images/Backgrounds/saltflat-background.jpg);
     background-repeat: no-repeat;
@@ -19,104 +23,112 @@ body.writeups {
     background-size: cover;
 }
 
-.animate-in {
-    -webkit-animation: fadeIn .5s ease-in;
-    animation: fadeIn .5s ease-in;
-}
+/* Hero Image and Content - considering removal */
 
-.animate-out {
-    -webkit-transition: opacity .5s;
-    transition: opacity .5s;
-    opacity: 0;
-}
-
-@-webkit-keyframes fadeIn {
-    
-    from {opacity: 0;}
-    
-    to {opacity: 1;}
-
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-
-    to { opacity: 1; }
-}
-
-/* Hero Image and Content */
 
 header {
-    height: 30vh; /* Height of the whole header */
+    height: 40vh; 
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    top: 0;
+    margin-top: 0;
 }
 
 #home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/Banners/home-banner.jpg);
-    background-position: 100% 50%;
+    background-position: 100% 37%;
 }
 
 #writeups {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/Banners/writeups-banner.jpg);
-    background-position: 100% 125%;
+    background-position: 100% 50%;
 }
 
 #gallery {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/Banners/gallery-banner.jpg);
-    background-position: 100% 75%;
+    background-position: 100% 50%;
 }
 
-/* Logo is currently removed.
-
-.logo {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 300px;
-
-}
-
-.logo img {
-    display: block;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-}
-
-.logo img:hover {
-    box-shadow: 0px 0px 5px black;
-}
-
-*/
 
 /* Navigation Bar */
 
-nav {
-    width: 50%;
-    margin: 0 auto;
-    top: 90%;
-    position: relative;
 
-}
+    /* Desktop Nav Bar */
 
-nav ul {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 0;
-}
+    nav {
+        width: 50%;
+        margin: 0 auto;
+        top: 40%;
+        position: relative;
+    }
 
-nav li{
-    width: 150px;
-    display: inline-block;
-    box-shadow: 0px 0px 5px grey
-}
+    nav>ul {
+        list-style-type: none;
 
-nav li:hover {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav>ul>li:not(#logo) {
+        flex: 1;
+        background-color: black;
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 30px;
+    }
+
+    /* Small Laptop Nav Bar */
+
+    @media all and (max-width:992px) {
+
+        nav {
+            top: 10%;
+        }
+
+        nav>ul {
+            flex-wrap: wrap;
+        }
+
+        nav>ul>li {
+             flex-basis: 100%;
+             order: 1;
+        }
+
+         #logo {
+            order: 0;
+        }
+    }
+
+    /* Nav Bar Tablet-Landscape */
+
+    @media screen and (max-width:768px) {
+        nav>ul {
+            flex-direction: column;
+        }
+
+    }
+
+    /* Nav Bar Tablet-Portrait/Mobile */
+    
+    @media screen and (max-width:600px) {
+        
+
+
+    }
+
+    /* Nav Bar Small Phone */
+
+    @media screen and (max-width:320px) {
+        
+        
+
+    }
+
+nav li:hover:not(#logo) {
     box-shadow: 0px 0px 8px white
 }
 
@@ -129,36 +141,91 @@ nav a {
 
 /* About page */
 
-.about article{
-    background: rgba(255, 255, 255, 0.808);
-    padding-left: 10px;
-    width: 30%;
-    margin: auto;
-    margin-top: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+    /*About Desktop*/
 
-.about h1 {
-    text-align: center;
-}
+    .about article{
+        background: rgba(255, 255, 255, 0.808);
+        width: 30%;
+        margin: auto;
+        margin-top: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .about h1 {
+        text-align: center;
+    }
+    
+    .about h2 {
+        text-align: center;
+    }
+    
+    .about p {
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        font-size: 14pt;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    
+    .about img {
+        display: block;
+        margin: auto;
+        width: 15vw;
+        height: 30vh;
+        object-fit: cover;
+    }
 
-.about h2 {
-    text-align: center;
-}
+    /* About small laptops */
 
-.about p {
-    text-align: center;
-    width: 70%;
-    margin: auto;
-    font-size: 14pt;
-    font-family: Arial, Helvetica, sans-serif
-}
+    @media screen and (max-width:992px) {
+        .about article {
+            width: 70%
+        }
 
-.about img {
-    display: block;
-    margin: auto;
-    width: 15vw;
-    height: 30vh;
-    object-fit: cover;
-}
+        .about p {
+            width: 90%;
+        }
+
+        .about img {
+            width: 50%;
+            height: 40vh;
+        }
+    }
+
+    /* About Tablet Landscape */
+
+    @media screen and (max-width:768px) {
+        .about article {
+            width: 60%
+        }
+
+        .about p {
+            width: 90%;
+        }
+
+        .about img {
+            width: 50%;
+            height: 40vh;
+        }
+    }
+
+    /* About Tablet-Portrait/Mobile */
+
+    @media screen and (max-width: 600px) {
+        .about article {
+            background: rgba(255, 255, 255, 0.637);
+            width: 100%;
+            margin: 0;
+        }
+
+        .about p {
+            width: 90%;
+        }
+
+        .about img {
+            width: 50vw;
+            height: 40vh;
+        }
+    }
+
