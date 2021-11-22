@@ -64,9 +64,9 @@ header {
     /* Desktop Nav Bar */
 
     nav {
-        width: 50%;
-        margin: 0 auto;
-        top: 40%;
+        width: 100%;
+        margin: auto;
+        top: 10vh;
         position: relative;
     }
 
@@ -154,6 +154,15 @@ header {
             display: none;
         }
 
+    }
+
+    /* Nav Bar Landscape */
+
+    @media screen and (max-height:670px) {
+
+        .logo {
+            display: none;
+        }
     }
 
 nav li:hover:not(.logo) {
