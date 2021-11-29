@@ -90,7 +90,12 @@ header {
         align-items: center;
     }
 
-    
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     /* Small Laptop Nav Bar */
 
     @media screen and (max-width:992px) {
@@ -135,7 +140,7 @@ header {
     @media screen and (max-width:420px) {
         
         nav{
-            top: 15%;
+            top: 2%;
         }
 
         nav ul{
