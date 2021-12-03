@@ -303,7 +303,12 @@ nav a {
     }
 
     .galleryImg {
+<<<<<<< HEAD
         max-width: 100%;       
+=======
+        max-width: 100%;
+        
+>>>>>>> master
         border-radius: 10px;
         position: relative;
         transition: transform 250ms;
