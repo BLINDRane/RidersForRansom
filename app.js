@@ -11,10 +11,15 @@ imageIndexes.forEach(i => {
     image.alt = `TAT Picture ${i+1}`;
     image.classList.add('galleryImg');
  
-    //you can check image.naturalHeight, for aspect ratio specific stuff.
-    if(prevImage != null && image.naturalWidth > prevImage.naturalWidth){
-        image.classList.add('wider');
+    image.onload = function(){
+        
+        //you can check image.naturalHeight, for aspect ratio specific stuff.
+        if(prevImage != null && image.naturalWidth > prevImage.naturalWidth){
+            image.classList.add('wider');
+        }
+        
     }
+  
 
     image.addEventListener("click", ()=>{
         //popup things
