@@ -140,7 +140,7 @@ header {
     @media screen and (max-width:420px) {
         
         nav{
-            top: 2%;
+            top: 10%;
         }
 
         nav ul{
@@ -149,6 +149,11 @@ header {
 
         nav ul li:not(.logo) {
             width:50%;
+        }
+
+        nav ul li {
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
 
         .logo {
