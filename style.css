@@ -313,6 +313,11 @@ nav a {
         transition: transform 250ms;
     }
 
+    .wider {
+       grid-column: span 2;
+    }
+
+
     #gallery {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
